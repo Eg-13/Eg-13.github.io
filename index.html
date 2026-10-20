@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xinru Li — Personal Portfolio</title>
+  <meta name="description" content="Personal website of Xinru Li, student at XJTLU Entrepreneur College (Taicang)." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">Xinru Li</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Student · Data Science &amp; Big Data Technology</p>
+        <h1>Xinru Li</h1>
+        <p class="lead">
+          Third-year undergraduate at Xi'an Jiaotong-Liverpool University, Entrepreneur College (Taicang).
+          Interested in machine learning, signal processing and network systems.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn ghost" href="assets/CV.pdf" download>Download CV</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/photo.jpg" alt="Portrait of Xinru Li" onerror="this.style.display='none'" />
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I am an undergraduate student at XJTLU working at the intersection of data and systems.
+        My coursework covers machine learning, digital signal processing and networking, and I
+        enjoy turning theory into working prototypes — from kernel SVMs to socket-based video
+        streaming.
+      </p>
+      <p>
+        This site was built as part of CSI205TC Networking and Distributed Computing, and is
+        deployed with GitHub Pages.
+      </p>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Xi'an Jiaotong-Liverpool University</h3>
+        <p class="muted">BEng Data Science and Big Data Technology · 2024 – present</p>
+        <p>XJTLU Entrepreneur College (Taicang), Academy of AI and Advanced Technology.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Video streaming over TCP and UDP</h3>
+          <p class="muted">Python · sockets · Wireshark</p>
+          <p>
+            Built a frame-based streaming application with both transports, measured per-frame
+            latency and loss, and analysed the captures to quantify the cost of chunking under
+            packet loss.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Kernel methods and kernel SVM</h3>
+          <p class="muted">Python · scikit-learn</p>
+          <p>
+            Compared linear, polynomial and RBF kernels, studied the effect of γ on the kernel
+            matrix, and tuned an RBF SVM with a nested train/validation/test protocol.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Digital transmission and signal reconstruction</h3>
+          <p class="muted">Python · NumPy · SciPy</p>
+          <p>
+            Sampling, quantisation, DFT/FFT analysis and error-correcting codes, implemented from
+            first principles and validated against analytic results.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="chips">
+        <li>Python</li>
+        <li>NumPy / pandas</li>
+        <li>scikit-learn</li>
+        <li>Signal processing</li>
+        <li>Socket programming</li>
+        <li>Wireshark</li>
+        <li>LaTeX</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:Xinru.Li24@student.xjtlu.edu.cn">Xinru.Li24@student.xjtlu.edu.cn</a></p>
+      <p>GitHub: <a href="https://github.com/Eg-13">github.com/Eg-13</a></p>
+      <p class="muted">Taicang, Jiangsu, China</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Xinru Li · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
